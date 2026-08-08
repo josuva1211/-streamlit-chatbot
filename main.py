@@ -9,7 +9,7 @@ from google import genai
 # -----------------------------
 load_dotenv()
 
-API_KEY = os.getenv("GOOGLE_API_KEY")
+API_KEY = st.secrets.get("GOOGLE_API_KEY", os.getenv("GOOGLE_API_KEY"))
 
 if not API_KEY:
     st.error("GOOGLE_API_KEY not found in .env file.")
