@@ -32,12 +32,12 @@ MODEL = "gemini-3.5-flash-lite"
 # Streamlit UI
 # -----------------------------
 st.set_page_config(
-    page_title="Gemini Chatbot",
+    page_title="My Personal Chatbot",
     page_icon="🤖",
     layout="centered",
 )
 
-st.title("🤖 Gemini Chatbot")
+st.title("🤖 My Personal Chatbot")
 
 # -----------------------------
 # Session State
